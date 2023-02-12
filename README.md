@@ -57,6 +57,7 @@ Downloading Packer:
 
 Make sure to remove or move your current `nvim` directory
 
+Clone the config:
 ```sh
 git clone git@github.com:FarrukhKamal48/vscode-with-nvim.git ~/.config/nvim
 ```
