@@ -16,6 +16,7 @@ Note that this config was made a catered toward neovim v0.8.4. So if you apply t
 Here is how to install from `source`:
 
 - First we have to clone the neovim repo:
+
   using ssh keys:
   ```sh 
   git clone -b v0.8.4 git@github.com:neovim/neovim.git 
@@ -38,6 +39,7 @@ This config also needs a specific version of packer.
 Make sure that you delete `~/.local/share/nvim/site/pack/packer/start/packer.nvim` so that the appropriate packer version can be downloaded.
 
 Downloading Packer:
+
   - Initialize an empty repo:
   ```sh 
   cd ~/.local/share/nvim/site/pack/packer/start/
