@@ -1,4 +1,4 @@
-# myneovim
+# vscode + neovim
 > What is this repo?
 
 This repo is my backup for vscode with embeded neovim using the `vscode-neovim` extension. This config is stricktly for me and the following steps are made for me so that i can ensure my config does not break when i try to clone it from here to my local machine.
