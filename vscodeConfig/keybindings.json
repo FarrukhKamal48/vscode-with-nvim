@@ -58,6 +58,19 @@
         "command": "cursorEnd",
         "when": "textInputFocus && !textInputFocus && neovim.mode == normal || neovim.mode == visual"
     },
+    
+    
+    // move word by word
+    {
+        "key": "alt+h",
+        "command": "cursorWordLeft",
+        "when": "editorTextFocus && neovim.mode != insert"
+    },
+    {
+        "key": "alt+l",
+        "command": "cursorWordEndRight",
+        "when": "editorTextFocus && neovim.mode != insert"
+    },
 
     
     // move in insert mode
@@ -167,7 +180,7 @@
     {
         "key": "shift+space shift+g",
         "command": "workbench.view.scm",
-        "when": "workbench.scm.active && neovim.mode != insert"
+        "when": "scmViewletVisible && neovim.mode != insert"
     },
     // {
     //     "key": "shift+space shift+g",
@@ -305,11 +318,6 @@
         "command": "-workbench.action.showAllSymbols"
     },
     {
-        "key": "ctrl+t",
-        "command": "-vscode-neovim.send-cmdline",
-        "when": "neovim.mode == 'cmdline_insert' || neovim.mode == 'cmdline_normal' || neovim.mode == 'cmdline_replace'"
-    },
-    {
         "key": "ctrl+`",
         "command": "-workbench.action.terminal.toggleTerminal",
         "when": "terminal.active"
@@ -397,5 +405,15 @@
         "key": "ctrl+k ctrl+o",
         "command": "-workbench.action.files.openFolder",
         "when": "openFolderWorkspaceSupport"
+    },
+    {
+        "key": "ctrl+right",
+        "command": "-cursorWordEndRight",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+left",
+        "command": "-cursorWordLeft",
+        "when": "textInputFocus"
     }
 ]

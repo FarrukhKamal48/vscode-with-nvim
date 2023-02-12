@@ -2,6 +2,9 @@
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
     },
+    // path to nvim and init.lua
+    // "vscode-neovim.neovimExecutablePaths.linux": "/usr/local/bin/nvim",
+    // "vscode-neovim.neovimInitVimPaths.linux": "/home/farrukh/.config/nvim/init.lua",
 
     "editor.cursorBlinking": "phase",
     "window.customMenuBarAltFocus": false,
