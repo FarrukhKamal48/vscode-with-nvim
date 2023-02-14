@@ -620,5 +620,9 @@
   "telemetry.telemetryLevel": "off",
 
   "omnisharp.path": "latest",
-  "omnisharp.useGlobalMono": "always"
+  "omnisharp.useGlobalMono": "always",
+  "workbench.list.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "explicit"
 }
