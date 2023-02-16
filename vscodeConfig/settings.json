@@ -652,6 +652,11 @@
 		"editor.lineHighlightBackground": "#21283B",
 		"editor.selectionBackground": "#2A324A",
 
+		// word hover highlight
+		"editor.hoverHighlightBackground": "#283347",
+		"editor.wordHighlightBackground": "#324059",
+		"editor.wordHighlightBorder": "#324059",
+
 		// suggestions
 		"editorHoverWidget.background": "#141B24",
 		"editorSuggestWidget.background": "#141B24",
@@ -675,6 +680,7 @@
 		// statusbar
 		"statusBar.background": "#10161D",
 		"statusBarItem.hoverBackground": "#1A212E",
+		"statusBarItem.errorBackground": "#21283B",
 
 		// terminal
 		"panel.background": "#1A212E",
