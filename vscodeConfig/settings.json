@@ -612,6 +612,8 @@
 	"window.menuBarVisibility": "hidden",
 	"window.customMenuBarAltFocus": false,
 	"telemetry.telemetryLevel": "off",
+
+	// unity stuff
 	"omnisharp.path": "latest",
 	"omnisharp.useGlobalMono": "always",
 
@@ -632,60 +634,65 @@
 	"workbench.colorTheme": "One Dark Pro Darker",
 	"editor.tokenColorCustomizations": {},
 	"workbench.colorCustomizations": {
-		// tab colors
-		"tab.activeBorder": "#C75AE8",
-		"tab.activeBackground": "#1A212E",
-		"tab.inactiveBackground": "#21283B",
+		"[One Dark Pro Darker]": {
+			// tab colors
+			"tab.activeBorder": "#C75AE8",
+			"tab.activeBackground": "#1A212E",
+			"editorGroupHeader.tabsBorder": "#10161D",
+			"tab.inactiveBackground": "#21283B",
+			"tab.hoverBackground": "#1A212E",
+			"editorGroupHeader.tabsBackground": "#21283B",
 
-		// activity bar
-		"activityBar.background": "#10161D",
-		"activityBar.activeBorder": "#C75AE8",
-		"activityBar.border": "#10161D",
+			// activity bar
+			"activityBar.background": "#10161D",
+			"activityBar.activeBorder": "#C75AE8",
+			"activityBar.border": "#10161D",
 
-		// side bar
-		"sideBar.background": "#141B24",
-		"sideBarSectionHeader.background": "#10161D",
-		"sideBar.border": "#10161D",
+			// side bar
+			"sideBar.background": "#141B24",
+			"sideBarSectionHeader.background": "#10161D",
+			"sideBar.border": "#10161D",
 
-		// editor colors
-		"editor.background": "#1A212E",
-		"editor.lineHighlightBackground": "#21283B",
-		"editor.selectionBackground": "#2A324A",
+			// editor colors
+			"editor.background": "#1A212E",
+			"editor.lineHighlightBackground": "#21283B",
+			"editor.selectionBackground": "#2A324A",
 
-		// word hover highlight
-		"editor.hoverHighlightBackground": "#283347",
-		"editor.wordHighlightBackground": "#324059",
-		"editor.wordHighlightBorder": "#324059",
+			// word hover highlight
+			"editor.hoverHighlightBackground": "#283347",
+			"editor.wordHighlightBackground": "#324059",
+			"editor.wordHighlightBorder": "#324059",
 
-		// suggestions
-		"editorHoverWidget.background": "#141B24",
-		"editorSuggestWidget.background": "#141B24",
-		"editorSuggestWidget.selectedBackground": "#21283B",
+			// suggestions
+			"editorHoverWidget.background": "#141B24",
+			"editorSuggestWidget.background": "#141B24",
+			"editorSuggestWidget.selectedBackground": "#21283B",
 
-		// text input feilds
-		"input.background": "#10161D",
-		"dropdown.background": "#10161D",
+			// text input feilds
+			"input.background": "#10161D",
+			"dropdown.background": "#10161D",
 
-		// general list colors
-		"list.hoverBackground": "#262e43",
-		"list.focusBackground": "#21283B",
-		"list.focusOutline": "#c75ae8a2",
+			// general list colors
+			"list.hoverBackground": "#262e43",
+			"list.focusBackground": "#21283B",
+			"list.focusOutline": "#c75ae8a2",
 
-		// settings
-		"settings.textInputBackground": "#10161D",
-		"settings.focusedRowBackground": "#21283B",
-		"settings.dropdownBackground": "#10161D",
-		"settings.checkboxBackground": "#10161D",
+			// settings
+			"settings.textInputBackground": "#10161D",
+			"settings.focusedRowBackground": "#21283B",
+			"settings.dropdownBackground": "#10161D",
+			"settings.checkboxBackground": "#10161D",
 
-		// statusbar
-		"statusBar.background": "#10161D",
-		"statusBarItem.hoverBackground": "#1A212E",
-		"statusBarItem.errorBackground": "#21283B",
+			// statusbar
+			"statusBar.background": "#10161D",
+			"statusBarItem.hoverBackground": "#1A212E",
+			"statusBarItem.errorBackground": "#21283B",
 
-		// terminal
-		"panel.background": "#1A212E",
-		"panel.border": "#10161D",
-		"panelTitle.activeBorder": "#C75AE8",
-		"terminal.background": "#1A212E"
+			// terminal
+			"panel.background": "#1A212E",
+			"panel.border": "#10161D",
+			"panelTitle.activeBorder": "#C75AE8",
+			"terminal.background": "#1A212E"
+		}
 	}
 }
