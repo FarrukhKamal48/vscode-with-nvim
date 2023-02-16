@@ -150,7 +150,7 @@
 
 	// toggle side bar
 	{
-		"key": "shift+space shift+b",
+		"key": "shift+space shift+h",
 		"command": "workbench.action.toggleSidebarVisibility",
 		"when": "neovim.mode != insert"
 	},

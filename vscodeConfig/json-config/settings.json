@@ -631,7 +631,7 @@
 	"json.format.keepLines": true,
 
 	// color scheme
-	"workbench.colorTheme": "One Dark Pro Darker",
+	"workbench.colorTheme": "One Blue",
 	"editor.tokenColorCustomizations": {},
 	"workbench.colorCustomizations": {
 		"[One Dark Pro Darker]": {
@@ -657,6 +657,11 @@
 			"editor.background": "#1A212E",
 			"editor.lineHighlightBackground": "#21283B",
 			"editor.selectionBackground": "#2A324A",
+
+			// search colors
+			"editor.findMatchBackground": "#324059",
+			"editor.findMatchBorder": "#324059",
+			"editor.findMatchHighlightBackground": "#324059",
 
 			// word hover highlight
 			"editor.hoverHighlightBackground": "#283347",
@@ -685,6 +690,7 @@
 
 			// statusbar
 			"statusBar.background": "#10161D",
+			"statusBar.noFolderBackground": "#10161D",
 			"statusBarItem.hoverBackground": "#1A212E",
 			"statusBarItem.errorBackground": "#21283B",
 
@@ -692,7 +698,11 @@
 			"panel.background": "#1A212E",
 			"panel.border": "#10161D",
 			"panelTitle.activeBorder": "#C75AE8",
-			"terminal.background": "#1A212E"
+			"terminal.background": "#1A212E",
+
+			// command palet
+			"quickInput.background": "#141B24",
+			"quickInputList.focusBackground": "#262e43"
 		}
 	}
 }
