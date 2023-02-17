@@ -666,7 +666,7 @@
 
 		// 	// suggestions
 		// 	"editorHoverWidget.background": "#141B24",
-		// 	"editorSuggestWidget.background": "#141B24",
+			// "editorSuggestWidget.border": "#324059",
 		// 	"editorSuggestWidget.selectedBackground": "#21283B",
 
 		// 	// text input feilds
@@ -709,7 +709,7 @@
 	"[c]": {
 		"editor.defaultFormatter": "ms-vscode.cpptools"
 	},
-	"window.zoomLevel": -1,
 	"workbench.colorTheme": "One Blue",
 	"workbench.productIconTheme": "fluent-icons",
+	"window.zoomLevel": -1
 }
