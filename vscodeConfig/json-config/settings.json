@@ -710,5 +710,6 @@
 		"editor.defaultFormatter": "ms-vscode.cpptools"
 	},
 	"window.zoomLevel": -1,
-	"workbench.colorTheme": "One Blue"
+	"workbench.colorTheme": "One Blue",
+	"workbench.productIconTheme": "fluent-icons",
 }
