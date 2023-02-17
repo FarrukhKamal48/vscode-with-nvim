@@ -705,6 +705,7 @@
 		// 	"editorGutter.addedBackground": "#84ff00"
 		}
 	},
+
 	"[c]": {
 		"editor.defaultFormatter": "ms-vscode.cpptools"
 	},
