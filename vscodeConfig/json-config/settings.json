@@ -628,12 +628,9 @@
 	"prettier.tabWidth": 4,
 	"prettier.useTabs": true,
 	"json.format.keepLines": true,
-
-	// color scheme
-	"workbench.colorTheme": "One Blue",
 	"editor.tokenColorCustomizations": {},
 	"workbench.colorCustomizations": {
-		// "[One Blue]": {
+		"[One Blue]": {
 		// 	// tab colors
 		// 	"tab.activeBorder": "#C75AE8",
 		// 	"tab.activeBackground": "#1A212E",
@@ -704,12 +701,13 @@
 		// 	"quickInputList.focusBackground": "#262e43",
 			
 		// 	// highlight edits in editor gutter
-		// 	"editorGutter.modifiedBackground": "#ff8400",
+			// "editorGutter.modifiedBackground": "#00CA00",
 		// 	"editorGutter.addedBackground": "#84ff00"
-		// }
+		}
 	},
 	"[c]": {
 		"editor.defaultFormatter": "ms-vscode.cpptools"
 	},
-	"window.zoomLevel": -1
+	"window.zoomLevel": -1,
+	"workbench.colorTheme": "One Blue"
 }
