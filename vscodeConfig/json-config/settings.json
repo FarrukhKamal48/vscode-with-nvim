@@ -714,5 +714,6 @@
 	},
 	"workbench.colorTheme": "One Blue",
 	"workbench.productIconTheme": "fluent-icons",
-	"window.zoomLevel": -1
+	"window.zoomLevel": -1,
+	"workbench.quickOpen.preserveInput": true,
 }
