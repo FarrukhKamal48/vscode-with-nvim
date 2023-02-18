@@ -676,7 +676,9 @@
 		// 	// general list colors
 		// 	"list.hoverBackground": "#262e43",
 		// 	"list.focusBackground": "#21283B",
-		// 	"list.focusOutline": "#c75ae8a2",
+		// 	"list.focusOutline": "#10161d",
+		// "list.inactiveSelectionBackground": "#2a344e",
+		// "list.activeSelectionBackground": "#2a344e",
 
 		// 	// settings
 		// 	"settings.textInputBackground": "#10161D",

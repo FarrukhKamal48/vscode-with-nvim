@@ -27,7 +27,7 @@
 				"cursorDown"
 			]
 		},
-		"when": "neovim.mode != insert"
+		"when": "neovim.mode != insert && editorTextFocus"
 	},
 	{
 		"key": "alt+k",
@@ -41,7 +41,7 @@
 				"cursorUp"
 			]
 		},
-		"when": "neovim.mode != insert"
+		"when": "neovim.mode != insert && editorTextFocus"
 	},
 
 	// start of line
@@ -89,10 +89,19 @@
 		"command": "cursorRight",
 		"when": "textInputFocus && neovim.mode != normal && neovim.mode != visual"
 	},
+	
+	// scroll quick open (i.e command pallet, quick open file menu)
+	{
+		"key": "alt+j",
+		"command": "workbench.action.quickOpenSelectNext",
+		"when": "inQuickOpen"
+	},
+	{
+		"key": "alt+k",
+		"command": "workbench.action.quickOpenSelectPrevious",
+		"when": "inQuickOpen"
+	},
 
-	// move word by word
-
-	// intelisense suggestions
 
 	// next suggestion
 	{
@@ -215,12 +224,13 @@
 		"when": "neovim.mode != insert && neovim.ctrlKeysNormal"
 	},
 
-	// find files
+	// quick open menu. Search file. Press : to go to line. Press > to go to command palet. Press @ to go to symbol
 	{
-		"key": "alt+f alt+f",
-		"command": "filesExplorer.findInFolder",
-		"when": "explorerResourceIsFolder && explorerViewletVisible && filesExplorerFocus && neovim.mode != insert"
+		"key": "alt+p",
+		"command": "workbench.action.quickOpen",
+		"when": "neovim.mode != insert"
 	},
+
 	// find text in files
 	{
 		"key": "alt+f alt+t",
@@ -429,5 +439,29 @@
 		"key": "ctrl+shift+x",
 		"command": "-workbench.view.extensions",
 		"when": "viewContainer.workbench.view.extensions.enabled"
-	}
+	},
+	{
+		"key": "alt+p",
+		"command": "-togglePreserveCase",
+		"when": "editorFocus"
+	},
+	{
+		"key": "alt+p",
+		"command": "-toggleSearchPreserveCase",
+		"when": "searchViewletFocus"
+	},
+	{
+		"key": "ctrl+p",
+		"command": "-workbench.action.quickOpen"
+	},
+	{
+		"key": "ctrl+n",
+		"command": "-workbench.action.quickOpenSelectNext",
+		"when": "inQuickOpen"
+	},
+	{
+		"key": "ctrl+p",
+		"command": "-workbench.action.quickOpenSelectPrevious",
+		"when": "inQuickOpen"
+	},
 ]
