@@ -705,6 +705,7 @@
 		// 	// highlight edits in editor gutter
 			// "editorGutter.modifiedBackground": "#00CA00",
 		// 	"editorGutter.addedBackground": "#84ff00"
+		// "notifications.background": "#141B24",
 		}
 	},
 
