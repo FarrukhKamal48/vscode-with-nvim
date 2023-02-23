@@ -716,4 +716,8 @@
 	"workbench.productIconTheme": "fluent-icons",
 	"window.zoomLevel": -1,
 	"workbench.quickOpen.preserveInput": true,
+	"[csharp]": {
+		"editor.defaultFormatter": "ms-dotnettools.csharp"
+	},
+	"csharp.referencesCodeLens.enabled": false,
 }

@@ -274,6 +274,11 @@
 		"command": "workbench.action.terminal.clear",
 		"when": "terminalFocus"
 	},
+	{
+		"key": "shift+space shift+l",
+		"command": "workbench.action.tasks.toggleProblems",
+		"when": "activeViewlet != 'problems' && neovim.mode != insert"
+	},
 	// navigate in terminal
 
 	// replace
