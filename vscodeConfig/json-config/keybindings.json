@@ -67,6 +67,28 @@
 		"command": "cursorWordEndRight",
 		"when": "editorTextFocus && neovim.mode != insert"
 	},
+	
+	// move text up and down
+	{
+		"key": "shift+alt+h",
+		"command": "editor.action.moveCarretLeftAction",
+		"when": "neovim.mode != 'insert' && editorTextFocus"
+	},
+	{
+		"key": "shift+alt+j",
+		"command": "editor.action.moveLinesDownAction",
+		"when": "neovim.mode != 'insert' && editorTextFocus"
+	},
+	{
+		"key": "shift+alt+k",
+		"command": "editor.action.moveLinesUpAction",
+		"when": "neovim.mode != 'insert' && editorTextFocus"
+	},
+	{
+		"key": "shift+alt+l",
+		"command": "editor.action.moveCarretRightAction",
+		"when": "neovim.mode != 'insert' && editorTextFocus"
+	},
 
 	// move in insert mode
 	{
@@ -468,5 +490,20 @@
 		"key": "ctrl+p",
 		"command": "-workbench.action.quickOpenSelectPrevious",
 		"when": "inQuickOpen"
+	},
+	{
+		"key": "shift+alt+j",
+		"command": "editor.action.moveLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "alt+down",
+		"command": "-editor.action.moveLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "alt+up",
+		"command": "-editor.action.moveLinesUpAction",
+		"when": "editorTextFocus && !editorReadonly"
 	},
 ]
