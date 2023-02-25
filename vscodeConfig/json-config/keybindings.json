@@ -92,12 +92,12 @@
 	
 	// scroll quick open (i.e command pallet, quick open file menu)
 	{
-		"key": "alt+j",
+		"key": "ctrl+j",
 		"command": "workbench.action.quickOpenSelectNext",
 		"when": "inQuickOpen"
 	},
 	{
-		"key": "alt+k",
+		"key": "ctrl+k",
 		"command": "workbench.action.quickOpenSelectPrevious",
 		"when": "inQuickOpen"
 	},
@@ -107,13 +107,13 @@
 	{
 		"key": "ctrl+j",
 		"command": "selectNextSuggestion",
-		"when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus && neovim.mode == insert"
+		"when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus && neovim.mode == insert && !inQuickOpen"
 	},
 	// prev suggestion
 	{
 		"key": "ctrl+k",
 		"command": "selectPrevSuggestion",
-		"when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus && neovim.mode == insert"
+		"when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus && neovim.mode == insert && !inQuickOpen"
 	},
 
 	// close editor
@@ -206,22 +206,22 @@
 	{
 		"key": "ctrl+h",
 		"command": "workbench.action.navigateLeft",
-		"when": "neovim.mode != insert && neovim.ctrlKeysNormal"
+		"when": "neovim.mode != insert && neovim.ctrlKeysNormal && !inQuickOpen"
 	},
 	{
 		"key": "ctrl+j",
 		"command": "workbench.action.navigateDown",
-		"when": "neovim.mode != insert && neovim.ctrlKeysNormal"
+		"when": "neovim.mode != insert && neovim.ctrlKeysNormal && !inQuickOpen"
 	},
 	{
 		"key": "ctrl+k",
 		"command": "workbench.action.navigateUp",
-		"when": "neovim.mode != insert && neovim.ctrlKeysNormal"
+		"when": "neovim.mode != insert && neovim.ctrlKeysNormal && !inQuickOpen"
 	},
 	{
 		"key": "ctrl+l",
 		"command": "workbench.action.navigateRight",
-		"when": "neovim.mode != insert && neovim.ctrlKeysNormal"
+		"when": "neovim.mode != insert && neovim.ctrlKeysNormal && !inQuickOpen"
 	},
 
 	// quick open menu. Search file. Press : to go to line. Press > to go to command palet. Press @ to go to symbol
