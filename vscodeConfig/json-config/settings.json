@@ -630,8 +630,8 @@
 	"editor.tokenColorCustomizations": {},
 	"workbench.colorCustomizations": {
 		"[One Blue]": {
-			"editor.wordHighlightBackground": "#2e3751ab",
-			"editor.selectionBackground": "#3a5075de",
+			// "editor.wordHighlightBackground": "#2e3751ab",
+			// "editor.selectionBackground": "#3a5075de",
 		}
 	},
 

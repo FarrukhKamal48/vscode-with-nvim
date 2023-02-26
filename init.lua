@@ -9,7 +9,6 @@ require("user.autocommands")
 if vim.g.vscode then
     -- vscode extensions
     require("user.vscode&nvim")
-    print("fuck you")
 else
     -- ordinary Neovim
     require("user.colorscheme")

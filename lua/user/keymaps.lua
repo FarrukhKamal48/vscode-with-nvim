@@ -181,7 +181,7 @@ else
     -- Plugins --
 
     -- NvimTree
-    keymap("n", "<leader>e", ":NvimTreeToggle<CR> :NvimTreeRefresh<CR>", opts)
+    keymap("n", "<leader>E", ":NvimTreeToggle<CR> :NvimTreeRefresh<CR>", opts)
 
 
     -- ToogleTerm
@@ -196,14 +196,14 @@ else
 
 
     -- Git
-    keymap("n", "<leader>gg", "<cmd>LazyGit<CR>", opts)
+    keymap("n", "<leader>G", "<cmd>LazyGit<CR>", opts)
 
 
     -- Comment
     --[[ keymap("n", "<leader>cc", "<cmd>lua require('Comment.api').toggle_current_linewise()<CR>", opts) ]]
     --[[ keymap("x", "<leader>cc", '<ESC><CMD>lua require("Comment.api").toggle_linewise_op(vim.fn.visualmode())<CR>') ]]
-    keymap("n", "<leader>cc", "gcc<CR>", opts)
-    keymap("x", "<leader>c", "gc<CR>", opts)
+    keymap("n", "<C-/>", "gcc<CR>", opts)
+    keymap("x", "<C-/>", "gc<CR>", opts)
 
 
     -- DAP
