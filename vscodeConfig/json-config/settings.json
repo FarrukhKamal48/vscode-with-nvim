@@ -620,7 +620,6 @@
 	"workbench.list.smoothScrolling": true,
 	"terminal.integrated.smoothScrolling": true,
 	"editor.smoothScrolling": true,
-	"editor.cursorSmoothCaretAnimation": "explicit",
 
 	// prettier
 	"editor.formatOnSave": false,

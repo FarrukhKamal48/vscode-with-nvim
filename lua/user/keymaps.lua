@@ -56,6 +56,12 @@ keymap("n", "m", "$", opts)
 keymap("n", "<S-n>", "gg", opts)
 keymap("n", "<S-m>", "<S-g>", opts)
 
+-- Move text up and down
+keymap("n", "<A-J>", ":m .+1<CR>==", opts)
+keymap("n", "<A-K>", ":m .-2<CR>==", opts)
+keymap("v", "<A-J>", ":m '>+1<CR>gv=gv", opts)
+keymap("v", "<A-K>", ":m '<-2<CR>gv=gv", opts)
+
 
 -- Select EveryThing in normal_mode
 keymap("n", "<C-A>", "ggVG", opts)  -- does'nt work
