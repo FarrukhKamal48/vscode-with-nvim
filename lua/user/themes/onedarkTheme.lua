@@ -6,7 +6,7 @@ require("onedark").setup({
 	ending_tildes = true, -- Show the end-of-buffer tildes. By default they are hidden
 	cmp_itemkind_reverse = false, -- reverse item kind highlights in cmp menu
 	-- toggle theme style ---
-	toggle_style_key = "<leader>ts", -- Default keybinding to toggle
+	toggle_style_key = "<C-t>s", -- Default keybinding to toggle
 	toggle_style_list = { "dark", "darker", "cool", "deep", "warm", "warmer", "light" }, -- List of styles to toggle between
 
 	-- Change code style ---
