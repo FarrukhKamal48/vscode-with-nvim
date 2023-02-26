@@ -72,22 +72,22 @@
 	{
 		"key": "shift+alt+h",
 		"command": "editor.action.moveCarretLeftAction",
-		"when": "neovim.mode != 'insert' && editorTextFocus"
+		"when": "!editorReadonly && editorTextFocus"
 	},
 	{
 		"key": "shift+alt+j",
 		"command": "editor.action.moveLinesDownAction",
-		"when": "neovim.mode != 'insert' && editorTextFocus"
+		"when": "!editorReadonly && editorTextFocus"
 	},
 	{
 		"key": "shift+alt+k",
 		"command": "editor.action.moveLinesUpAction",
-		"when": "neovim.mode != 'insert' && editorTextFocus"
+		"when": "!editorReadonly && editorTextFocus"
 	},
 	{
 		"key": "shift+alt+l",
 		"command": "editor.action.moveCarretRightAction",
-		"when": "neovim.mode != 'insert' && editorTextFocus"
+		"when": "!editorReadonly && editorTextFocus"
 	},
 
 	// move in insert mode
