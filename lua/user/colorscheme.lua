@@ -1,4 +1,4 @@
-local theme = "ayu" -- choose theme name, does not have to be exact
+local theme = "onedark" -- choose theme name, does not have to be exact
 
 local colorscheme = "onedark" -- actual variable for theme, must be exact
 
