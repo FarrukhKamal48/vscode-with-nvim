@@ -639,7 +639,7 @@
 		"editor.defaultFormatter": "ms-vscode.cpptools"
 	},
 	"workbench.productIconTheme": "fluent-icons",
-	"window.zoomLevel": -1.7,
+	"window.zoomLevel": -1.2,
 	"workbench.quickOpen.preserveInput": true,
 	"[csharp]": {
 		"editor.defaultFormatter": "ms-dotnettools.csharp"
@@ -650,4 +650,7 @@
 	"editor.scrollBeyondLastColumn": 10,
 	"editor.stickyScroll.enabled": true,
 	"workbench.colorTheme": "One Blue",
+	"editor.rulers": [
+		80	
+	],
 }
