@@ -638,7 +638,6 @@
 	"[c]": {
 		"editor.defaultFormatter": "ms-vscode.cpptools"
 	},
-	"workbench.colorTheme": "One Blue",
 	"workbench.productIconTheme": "fluent-icons",
 	"window.zoomLevel": -1.7,
 	"workbench.quickOpen.preserveInput": true,
@@ -648,4 +647,7 @@
 	"csharp.referencesCodeLens.enabled": false,
 	"editor.minimap.renderCharacters": false,
 	"editor.minimap.showSlider": "always",
+	"editor.scrollBeyondLastColumn": 10,
+	"editor.stickyScroll.enabled": true,
+	"workbench.colorTheme": "One Blue",
 }
