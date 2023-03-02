@@ -1,7 +1,6 @@
 -- General Settings
 require("user.options")
 require("user.keymaps")
-require("user.plugins")
 require("user.project")
 require("user.impatient")
 require("user.autocommands")
@@ -11,6 +10,7 @@ if vim.g.vscode then
     require("user.vscode&nvim")
 else
     -- ordinary Neovim
+    require("user.plugins")
     require("user.colorscheme")
     require("user.cmp")
     require("user.telescope")

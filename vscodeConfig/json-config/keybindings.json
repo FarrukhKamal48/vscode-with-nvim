@@ -142,17 +142,17 @@
 	{
 		"key": "q",
 		"command": "workbench.action.closeActiveEditor",
-		"when": "neovim.mode != insert && editorTextFocus"
+		"when": "editorAreaVisible && neovim.mode != insert"
 	},
 	{
 		"key": "ctrl+q",
 		"command": "workbench.action.reopenClosedEditor",
-		"when": "neovim.mode != insert && editorTextFocus && neovim.ctrlKeysNormal"
+		"when": "editorAreaVisible && neovim.mode != insert && neovim.ctrlKeysNormal"
 	},
 	{
 		"key": "ctrl+shift+q",
 		"command": "workbench.action.closeAllEditors",
-		"when": "neovim.mode != insert && editorTextFocus && neovim.ctrlKeysNormal"
+		"when": "editorAreaVisible && neovim.mode != insert && neovim.ctrlKeysNormal"
 	},
 
 	// save editor
@@ -171,12 +171,12 @@
 	{
 		"key": "shift+l",
 		"command": "workbench.action.nextEditor",
-		"when": "editorTextFocus && neovim.mode != insert"
+		"when": "editorAreaVisible && neovim.mode != insert"
 	},
 	{
 		"key": "shift+h",
 		"command": "workbench.action.previousEditor",
-		"when": "editorTextFocus && neovim.mode != insert"
+		"when": "editorAreaVisible && neovim.mode != insert"
 	},
 
 	// toggle side bar
@@ -296,8 +296,9 @@
 		"command": "workbench.action.terminal.clear",
 		"when": "terminalFocus"
 	},
+	// toggle problems
 	{
-		"key": "shift+space shift+l",
+		"key": "shift+space shift+p",
 		"command": "workbench.action.tasks.toggleProblems",
 		"when": "activeViewlet != 'problems' && neovim.mode != insert"
 	},
@@ -505,5 +506,15 @@
 		"key": "alt+up",
 		"command": "-editor.action.moveLinesUpAction",
 		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "alt+;",
+		"command": "extension.liveServer.goOnline",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "alt+l alt+o",
+		"command": "-extension.liveServer.goOnline",
+		"when": "editorTextFocus"
 	},
 ]
