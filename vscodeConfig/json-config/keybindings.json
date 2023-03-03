@@ -140,12 +140,12 @@
 
 	// close editor
 	{
-		"key": "q",
+		"key": "ctrl+q",
 		"command": "workbench.action.closeActiveEditor",
 		"when": "editorAreaVisible && neovim.mode != insert"
 	},
 	{
-		"key": "ctrl+q",
+		"key": "ctrl+w",
 		"command": "workbench.action.reopenClosedEditor",
 		"when": "editorAreaVisible && neovim.mode != insert && neovim.ctrlKeysNormal"
 	},
