@@ -656,6 +656,7 @@
 	"[csharp]": {
 		"editor.defaultFormatter": "ms-dotnettools.csharp"
 	},
+	"editor.cursorWidth": 3,
 	// "[html]": {
 	// 	"editor.defaultFormatter": "vscode.html-language-features"
 	// },

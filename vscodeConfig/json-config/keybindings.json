@@ -142,7 +142,7 @@
 	{
 		"key": "ctrl+q",
 		"command": "workbench.action.closeActiveEditor",
-		"when": "editorAreaVisible && neovim.mode != insert"
+		"when": "!inputBoxFocus && editorAreaVisible && neovim.mode != insert"
 	},
 	{
 		"key": "ctrl+w",
