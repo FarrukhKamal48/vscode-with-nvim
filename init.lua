@@ -16,7 +16,7 @@ else
     require("user.telescope")
     require("user.treesitter")
     require("user.autopairs")
-    --[[ require("user.gitsigns") ]]
+    require("user.gitsigns")
     require("user.illuminate")
     require("user.indentline")
     require("user.alpha")

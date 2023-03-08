@@ -42,6 +42,8 @@ xnoremap <silent> <C-w>v :call <SID>split('v')<CR>
 nnoremap <silent> <C-w>n :call <SID>splitNew('h', '__vscode_new__')<CR>
 xnoremap <silent> <C-w>n :call <SID>splitNew('h', '__vscode_new__')<CR>
 
+xnoremap <silent> <A-J> :call VSCodeCallVisual('editor.action.moveLinesDownAction', 1)<CR>
+
 "" explorer " 
 " nnoremap <silent> <C-f>f :call VSCodeNotify('workbench.action.toggleSidebarVisibility')<CR>
 " nnoremap <silent> <Space>ee :call VSCodeNotify('workbench.view.explorer')<CR>

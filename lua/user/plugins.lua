@@ -98,7 +98,7 @@ return packer.startup(function(use)
     use({"p00f/nvim-ts-rainbow", commit = "ef95c15a935f97c65a80e48e12fe72d49aacf9b9"})
 
     -- Git
-    use({ "lewis6991/gitsigns.nvim", commit = "c18e016864c92ecf9775abea1baaa161c28082c3" })
+    use({ "lewis6991/gitsigns.nvim"})
     use({"kdheepak/lazygit.nvim", commit = "9c73fd69a4c1cb3b3fc35b741ac968e331642600"})
 
 
