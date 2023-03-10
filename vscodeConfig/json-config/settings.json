@@ -641,7 +641,6 @@
 	],
 	"editor.overviewRulerBorder": false,
 	"editor.codeLens": false,
-	"window.zoomLevel": -1,
 	"editor.minimap.enabled": false,
 
 	// formatting
@@ -657,6 +656,7 @@
 		"editor.defaultFormatter": "ms-dotnettools.csharp"
 	},
 	"editor.cursorWidth": 3,
+	"window.zoomLevel": -2,
 	// "[html]": {
 	// 	"editor.defaultFormatter": "vscode.html-language-features"
 	// },

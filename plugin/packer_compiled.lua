@@ -274,11 +274,6 @@ _G.packer_plugins = {
     path = "/home/farrukh/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
   },
-  ["vim-easymotion"] = {
-    loaded = true,
-    path = "/home/farrukh/.local/share/nvim/site/pack/packer/start/vim-easymotion",
-    url = "https://github.com/easymotion/vim-easymotion"
-  },
   ["vim-illuminate"] = {
     loaded = true,
     path = "/home/farrukh/.local/share/nvim/site/pack/packer/start/vim-illuminate",

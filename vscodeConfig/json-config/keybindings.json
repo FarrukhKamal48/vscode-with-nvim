@@ -140,14 +140,24 @@
 
 	// close editor
 	{
+		"key": "q",
+		"command": "workbench.action.closeActiveEditor",
+		"when": "editorTextFocus && neovim.mode != insert"
+	},
+	{
 		"key": "ctrl+q",
 		"command": "workbench.action.closeActiveEditor",
-		"when": "!inputBoxFocus && editorAreaVisible && neovim.mode != insert"
+		"when": "inputFocus && !sideBarFocus || !editorTextFocus && !sideBarFocus"
+	},
+	{
+		"key": "w",
+		"command": "workbench.action.reopenClosedEditor",
+		"when": "editorTextFocus && neovim.mode != insert"
 	},
 	{
 		"key": "ctrl+w",
 		"command": "workbench.action.reopenClosedEditor",
-		"when": "editorAreaVisible && neovim.mode != insert && neovim.ctrlKeysNormal"
+		"when": "inputFocus && !sideBarFocus || !editorTextFocus && !sideBarFocus"
 	},
 	{
 		"key": "ctrl+shift+q",
@@ -284,6 +294,12 @@
 		"when": "neovim.mode != insert && openFolderWorkspaceSupport"
 	},
 
+	// toggle panel
+	{
+		"key": "shift+space shift+a",
+		"command": "workbench.action.closePanel",
+		"when": "neovim.mode != insert"
+	},
 	// toggle terminal
 	{
 		"key": "shift+space shift+t",
@@ -302,14 +318,20 @@
 		"command": "workbench.action.tasks.toggleProblems",
 		"when": "activeViewlet != 'problems' && neovim.mode != insert"
 	},
-	// navigate in terminal
+	// toggle output
+	{
+		"key": "shift+space shift+o",
+		"command": "workbench.action.output.toggleOutput",
+		"when": "activeViewlet != 'output' && neovim.mode != insert"
+	},
+
 
 	// replace
-	// {
-	//     "key": "ctrl+r ctrl+r",
-	//     "command": "editor.action.startFindReplaceAction",
-	//     "when": "editorFocus || editorIsOpen"
-	// },
+	{
+		"key": "alt+r alt+p",
+		"command": "editor.action.startFindReplaceAction",
+	    "when": "editorTextFocus && neovim.mode != insert"
+	},
 
 	// rename symbol
 	{
@@ -516,5 +538,10 @@
 		"key": "alt+l alt+o",
 		"command": "-extension.liveServer.goOnline",
 		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+k ctrl+h",
+		"command": "-workbench.action.output.toggleOutput",
+		"when": "workbench.panel.output.active"
 	},
 ]
