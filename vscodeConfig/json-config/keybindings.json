@@ -150,14 +150,9 @@
 		"when": "inputFocus && !sideBarFocus || !editorTextFocus && !sideBarFocus"
 	},
 	{
-		"key": "w",
-		"command": "workbench.action.reopenClosedEditor",
-		"when": "editorTextFocus && neovim.mode != insert"
-	},
-	{
 		"key": "ctrl+w",
 		"command": "workbench.action.reopenClosedEditor",
-		"when": "inputFocus && !sideBarFocus || !editorTextFocus && !sideBarFocus"
+		"when": "editorAreaVisible && neovim.mode != insert && neovim.ctrlKeysNormal"
 	},
 	{
 		"key": "ctrl+shift+q",
