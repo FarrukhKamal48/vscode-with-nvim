@@ -223,6 +223,12 @@
 		"command": "workbench.action.toggleSidebarVisibility",
 		"when": "activeViewlet == 'workbench.view.scm' && neovim.mode != insert"
 	},
+	// source controll
+	{
+		"key": "a",
+		"command": "git.stage",
+		"when": "activeViewlet == 'workbench.view.scm' && !editorTextFocus && !textInputFocus"
+	},
 	// {
 	//     "key": "shift+space shift+g",
 	//     "command": "workbench.action.toggleSidebarVisibility",
@@ -538,5 +544,5 @@
 		"key": "ctrl+k ctrl+h",
 		"command": "-workbench.action.output.toggleOutput",
 		"when": "workbench.panel.output.active"
-	}
+	},
 ]
