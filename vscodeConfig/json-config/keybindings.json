@@ -538,5 +538,5 @@
 		"key": "ctrl+k ctrl+h",
 		"command": "-workbench.action.output.toggleOutput",
 		"when": "workbench.panel.output.active"
-	},
+	}
 ]
