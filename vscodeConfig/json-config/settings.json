@@ -615,6 +615,8 @@
 	// unity stuff
 	"omnisharp.path": "latest",
 	"omnisharp.useGlobalMono": "always",
+	"omnisharp.useModernNet": false,
+	"omnisharp.monoPath": "/lib/mono/4.7.1-api",
 
 	// smooth scrolling
 	"workbench.list.smoothScrolling": true,
@@ -656,7 +658,8 @@
 		"editor.defaultFormatter": "ms-dotnettools.csharp"
 	},
 	"editor.cursorWidth": 3,
-	"window.zoomLevel": -2,
+	"window.zoomLevel": -1,
+	"vscode-neovim.neovimWidth": 1500,
 	// "[html]": {
 	// 	"editor.defaultFormatter": "vscode.html-language-features"
 	// },
