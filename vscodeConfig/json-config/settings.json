@@ -660,6 +660,7 @@
 	"editor.cursorWidth": 3,
 	"window.zoomLevel": -1,
 	"vscode-neovim.neovimWidth": 1500,
+	"workbench.layoutControl.enabled": false,
 	// "[html]": {
 	// 	"editor.defaultFormatter": "vscode.html-language-features"
 	// },
