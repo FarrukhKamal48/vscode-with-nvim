@@ -142,7 +142,7 @@
 	{
 		"key": "q",
 		"command": "workbench.action.closeActiveEditor",
-		"when": "editorTextFocus && neovim.mode != insert"
+		"when": "editorTextFocus && !renameInputVisible && neovim.mode != insert"
 	},
 	{
 		"key": "ctrl+q",
@@ -164,7 +164,7 @@
 	{
 		"key": "s",
 		"command": "workbench.action.files.save",
-		"when": "editorTextFocus && neovim.mode != insert"
+		"when": "editorTextFocus && !renameInputVisible && neovim.mode != insert"
 	},
 	{
 		"key": "ctrl+s",
@@ -176,12 +176,12 @@
 	{
 		"key": "shift+l",
 		"command": "workbench.action.nextEditor",
-		"when": "editorAreaVisible && neovim.mode != insert"
+		"when": "editorAreaVisible && !sideBarFocus && !renameInputVisible && neovim.mode != insert"
 	},
 	{
 		"key": "shift+h",
 		"command": "workbench.action.previousEditor",
-		"when": "editorAreaVisible && neovim.mode != insert"
+		"when": "editorAreaVisible && !sideBarFocus && !renameInputVisible && neovim.mode != insert"
 	},
 
 	// toggle side bar
@@ -298,7 +298,7 @@
 	// toggle panel
 	{
 		"key": "shift+space shift+a",
-		"command": "workbench.action.closePanel",
+		"command": "workbench.action.togglePanel",
 		"when": "neovim.mode != insert"
 	},
 	// toggle terminal
