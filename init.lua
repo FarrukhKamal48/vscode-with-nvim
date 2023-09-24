@@ -9,7 +9,7 @@ if vim.g.vscode then
     -- vscode extensions
     require("user.vscode&nvim")
 else
-    -- ordinary Neovim
+    -- normal nvim
     require("user.plugins")
     require("user.colorscheme")
     require("user.cmp")
@@ -29,4 +29,5 @@ else
     require("user.lualine")
     require("user.toggleterm")
     require("user.comment")
+    require("user.hop")
 end
