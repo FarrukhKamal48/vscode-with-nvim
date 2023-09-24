@@ -6,19 +6,14 @@ end
 local servers = {
 	"bashls",
 	"clangd",
-	"cssls",
-	"cssmodules_ls",
-	"emmet_ls",
-	"html",
-	"jdtls",
-	"jsonls",
+	--[[ "jsonls", ]]
 	"pyright",
-	"rust_analyzer",
+	--[[ "rust_analyzer", ]]
 	"sumneko_lua",
 	"taplo",
-	"tsserver",
+    "yamlls",
 	-- "csharp_ls",
-	"omnisharp",
+	--[[ "omnisharp", ]]
 }
 
 lsp_installer.setup()
