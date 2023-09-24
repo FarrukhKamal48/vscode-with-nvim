@@ -183,6 +183,12 @@ else
     -- NvimTree
     keymap("n", "<leader>E", ":NvimTreeToggle<CR> :NvimTreeRefresh<CR>", opts)
 
+    -- Hop
+    keymap("n", "F", ":HopLineStartMW<CR>", opts)
+    keymap("n", "fw", ":HopWordMW<CR>", opts)
+    keymap("n", "fp", ":HopPatternMW<CR>", opts)
+    keymap("n", "fc", ":HopChar2MW<CR>", opts)
+
 
     -- ToogleTerm
     -- keymap("n", "<C-/>", ":ToggleTermToggleAll<CR>", opts)
@@ -205,6 +211,7 @@ else
     keymap("n", "<C-/>", "gcc<CR>", opts)
     keymap("x", "<C-/>", "gc<CR>", opts)
 
+	--keymap(bufnr, "n", "<leader>lI", "<cmd>LspInstallInfo<cr>", opts)
 
     -- DAP
     keymap("n", "<leader>db", "<cmd>lua require'dap'.toggle_breakpoint()<cr>", opts)
