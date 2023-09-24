@@ -59,7 +59,7 @@ nvim_tree.setup {
     },
   },
   view = {
-    width = 33,
+    width = 28,
     side = "left",
     cursorline = true,
     mappings = {
