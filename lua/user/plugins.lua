@@ -59,11 +59,20 @@ return packer.startup(function(use)
     use({ "goolord/alpha-nvim", commit = "ef27a59e5b4d7b1c2fe1950da3fe5b1c5f3b4c94" })
     use { 'CRAG666/code_runner.nvim', commit = "a010649236fe245eaab2641a13228cd601499715", requires = 'nvim-lua/plenary.nvim' }
 
+    use {
+      'phaazon/hop.nvim',
+      branch = 'v2', -- optional but strongly recommended
+      config = function()
+        -- you can configure Hop the way you like here; see :h hop-config
+        require'hop'.setup { keys = 'etovxqpdygblzhckisuran' }
+      end
+    }
+
     -- Colorschemes
-    use({ "folke/tokyonight.nvim", commit = "8223c970677e4d88c9b6b6d81bda23daf11062bb" })
+    use({ "folke/tokyonight.nvim", commit = "9a01eada39558dc3243278e6805d90e8dff45dc0" })
     use({ "lunarvim/darkplus.nvim", commit = "2584cdeefc078351a79073322eb7f14d7fbb1835" })
-    use("navarasu/onedark.nvim")
-    use("Shatur/neovim-ayu")
+    use({"navarasu/onedark.nvim", commit = "dac8c39812dae025255c9069a260e1f69d967927"})
+    use({"Shatur/neovim-ayu", commit = "76dbf939b38e03ac5f9bd711ab3e434999f715c8"})
 
 
     -- cmp plugins
@@ -75,7 +84,7 @@ return packer.startup(function(use)
     use({ "hrsh7th/cmp-nvim-lua", commit = "f3491638d123cfd2c8048aefaf66d246ff250ca6"})
 
     -- unity
-    use({"OmniSharp/omnisharp-vim"})--, commit = "7e88f137ad7b74b0beb7034e592bcd07922be5e8"})
+    use({"OmniSharp/omnisharp-vim", commit = "9c12ecc93d9a65d698523b24fd32fad385015bbb"})
 
     -- snippets
     use({ "L3MON4D3/LuaSnip", commit = "9bff06b570df29434a88f9c6a9cea3b21ca17208"})
