@@ -64,7 +64,10 @@ keymap("v", "<A-K>", ":m '<-2<CR>gv=gv", opts)
 
 
 -- Select EveryThing in normal_mode
-keymap("n", "<C-A>", "ggVG", opts)  -- does'nt work
+keymap("n", "<C-A>", "ggVG", opts)
+
+-- Find and Replace
+keymap("n", "<A-r><A-r>", ":%s/", opts)
 
 
 -- Resize with arrows
