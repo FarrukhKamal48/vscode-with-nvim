@@ -1,29 +1,30 @@
-require("code_runner").setup({
-	mode = "toggleterm",
-    focus = false,
-	startinsert = false,
-	term = {
-		position = "vert",
-		size = 15,
-	},
-	filetype = {
-		-- java = "cd $dir && javac $fileName && java $fileNameWithoutExt",
-		python = "clear && python3.10 -u",
-		c = "gcc $file -o $fileNameWithoutExt && clear && $dir/./$fileNameWithoutExt",
-		-- typescript = "deno run",
-		-- rust = "cd $dir && rustc $fileName && $dir/$fileNameWithoutExt"
-	},
-	-- project = {
-	-- 	["~/deno/example"] = {
-	-- 		name = "ExapleDeno",
-	-- 		description = "Project with deno using other command",
-	-- 		file_name = "http/main.ts",
-	-- 		command = "deno run --allow-net",
-	-- 	},
-	-- 	["~/cpp/example"] = {
-	-- 		name = "ExapleCpp",
-	-- 		description = "Project with make file",
-	-- 		command = "make buid & cd buid/ & ./compiled_file",
-	-- 	},
-	-- },
-})
+local M = {
+  "CRAG666/code_runner.nvim",
+  event = "VimEnter",
+  commit = "01ce754d162170a3fcf372ad9f188a65c010f235",
+}
+
+
+function M.config()
+    local runner = require "code_runner"
+
+    runner.setup {
+        mode = "toggleterm",
+        focus = true,
+        startinsert = true,
+        -- term = {
+        --     position = "vert",
+        --     size = 15,
+        -- },
+        filetype = {
+            -- java = "cd $dir && javac $fileName && java $fileNameWithoutExt",
+            python = "clear && python3.11 -u",
+            c = "gcc $file -o $fileNameWithoutExt && clear && $dir/./$fileNameWithoutExt",
+            -- typescript = "deno run",
+            -- rust = "cd $dir && rustc $fileName && $dir/$fileNameWithoutExt"
+        },
+    }
+
+end
+
+return M

@@ -8,7 +8,7 @@ vim.opt.hlsearch = true                         -- highlight all matches on prev
 vim.opt.ignorecase = true                       -- ignore case in search patterns
 vim.opt.mouse = "a"                             -- allow the mouse to be used in neovim
 vim.opt.pumheight = 10                          -- pop up menu height
-vim.cmd('set lines relativenumber')
+--vim.cmd('set lines relativenumber')
 
 if vim.g.vscode then
     vim.opt.showmode = true                     -- we need to see things like -- INSERT --
