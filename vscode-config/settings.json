@@ -1,0 +1,103 @@
+{
+	"editor.codeLensFontFamily": "JetBrainsMono Nerd Font Mono",
+	"editor.fontFamily": "JetBrainsMono Nerd Font Mono",
+	"editor.fontSize": 16,
+	"terminal.external.linuxExec": "/bin/zsh",
+	"terminal.integrated.defaultProfile.linux": "zsh",
+	"editor.minimap.maxColumn": 50,
+	"terminal.integrated.cursorBlinking": true,
+	"terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
+	"terminal.integrated.cursorWidth": 2,
+	"pdf-preview.default.scale": "page-width",
+	"terminal.integrated.fontSize": 18,
+	"code-runner.runInTerminal": true,
+	"C_Cpp.autoAddFileAssociations": false,
+	"code-runner.customCommand": "cd $dir && gcc $fileName -o $fileNameWithoutExt -lm && $dir$fileNameWithoutExt",
+	// "c-cpp-compile-run.cpp-flags": "-lm",
+	"code-runner.saveFileBeforeRun": true,
+	// "tabnine.experimentalAutoImports": true,
+	"material-icon-theme.folders.color": "#2995ff",
+	"material-icon-theme.hidesExplorerArrows": true,
+	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+	"workbench.tree.renderIndentGuides": "always",
+	"editor.guides.highlightActiveIndentation": "always",
+	"editor.guides.bracketPairs": true,
+	"editor.trimAutoWhitespace": false,
+	"vscode-neovim.neovimExecutablePaths.linux": "/usr/local/bin/nvim",
+	"vscode-neovim.neovimInitVimPaths.win32": "$HOME/.config/nvim/init.lua",
+	"extensions.experimental.affinity": {
+		"asvetliakov.vscode-neovim": 1
+	},
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.startupEditor": "none",
+	"vscode-neovim.neovimInitVimPaths.linux": "/home/farrukh/.config/nvim/init.lua",
+
+	// graphics stuff
+	"editor.cursorBlinking": "phase",
+	"window.enableMenuBarMnemonics": false,
+	"window.menuBarVisibility": "hidden",
+	"window.customMenuBarAltFocus": false,
+	"telemetry.telemetryLevel": "off",
+
+	// unity stuff
+	"omnisharp.path": "latest",
+	"omnisharp.useGlobalMono": "always",
+	"omnisharp.useModernNet": true,
+	"dotnet.preferCSharpExtension": false,
+
+	// "omnisharp.monoPath": "/lib/mono/4.7.1-api",
+
+	// smooth scrolling
+	"workbench.list.smoothScrolling": true,
+	"terminal.integrated.smoothScrolling": true,
+	"editor.smoothScrolling": true,
+
+	"json.format.keepLines": true,
+	"editor.tokenColorCustomizations": {},
+	"workbench.colorCustomizations": {
+		"[Tokyo Night]": {
+			// "editor.wordHighlightBackground": "#2e3751ab",
+			// "editor.selectionBackground": "#3a5075de",
+			"editorCursor.foreground": "#00caca",
+			"editorCursor.background": "#000000"
+		}
+	},
+
+	"workbench.quickOpen.preserveInput": true,
+	"editor.minimap.renderCharacters": false,
+	"editor.minimap.showSlider": "always",
+	"editor.scrollBeyondLastColumn": 10,
+	"workbench.colorTheme": "Tokyo Night",
+	"editor.rulers": [
+		100	
+	],
+	"editor.overviewRulerBorder": false,
+	"editor.codeLens": false,
+	"editor.minimap.enabled": false,
+
+	// formatting
+	"editor.formatOnSave": false,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"prettier.tabWidth": 4,
+	"prettier.useTabs": true,
+	"prettier.bracketSpacing": true,
+	"[c]": {
+		"editor.defaultFormatter": "ms-vscode.cpptools"
+	},
+	"[csharp]": {
+		"editor.defaultFormatter": "ms-dotnettools.csdevkit"
+	},
+	"editor.cursorWidth": 3,
+	// "vscode-neovim.neovimWidth": 1500,
+	"workbench.layoutControl.enabled": false,
+	"dotnet.codeLens.enableReferencesCodeLens": false,
+	"editor.inlayHints.fontFamily": "JetBrainsMono Nerd Font Mono",
+	"debug.console.fontFamily": "JetBrainsMono Nerd Font Mono",
+	"window.zoomLevel": 1,
+	// "[html]": {
+	// 	"editor.defaultFormatter": "vscode.html-language-features"
+	// },
+	// "[css]": {
+	// 	"editor.defaultFormatter": "vscode.css-language-features"
+	// },
+}
