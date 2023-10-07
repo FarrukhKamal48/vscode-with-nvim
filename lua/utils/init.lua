@@ -8,6 +8,8 @@ M.servers = {
     "pyright",
     "taplo",
     "yamlls",
+    -- "csharp_ls",
+    -- "omnisharp_mono",
 }
 
 return M
