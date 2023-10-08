@@ -59,7 +59,13 @@
 			// "editor.wordHighlightBackground": "#2e3751ab",
 			// "editor.selectionBackground": "#3a5075de",
 			"editorCursor.foreground": "#00caca",
-			"editorCursor.background": "#000000"
+			"editorCursor.background": "#000000",
+
+			"editor.findMatchHighlightBackground": "#3d59a1",
+			"editor.findMatchBackground": "#ff9e64",
+
+			"editor.selectionBackground": "#33467c",
+			"editor.selectionForeground": "#bdc8e4",
 		}
 	},
 
@@ -101,3 +107,4 @@
 	// 	"editor.defaultFormatter": "vscode.css-language-features"
 	// },
 }
+
