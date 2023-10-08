@@ -127,6 +127,24 @@ Make sure the formatter or linter is installed and add it to this setup function
 
 **NOTE** Some are already setup as examples, remove them if you want
 
+### C# in Vscode
+
+Before anything else install all the packages in `vscode-config/csharp-pkgs`:
+```
+yay -S dotnet-host dotnet-runtime dotnet-sdk dotnet-targeting-pack
+```
+
+- Now, open vscode and install the `C#` and `.NET Runtime Install Tool` extension.
+
+- Open unity and go to `Edit/Preferences` and then select `External Tools`.
+- Select `Visual Studio Code` as the editor to open `C#` files.
+- Click `Regenerate Project Files`. You may need to select the `Embedded Packages`, `Local Packages` and `Registry Packages` checkboxes.
+
+- Next, open the Unity `Package Manager` and then install the `Visual Studio Editor` package (NOT to be confused with `Visual Studio Code Editor` package). Make sure it is version `2.0.21` or greater.
+
+- Now, still in unity, select `Assets/Open C# Project`.
+- Open a `C#` file and intelisense should be working :).
+
 ### Plugins
 
 ### You can install new plugins here: [plugins](https://github.com/LunarVim/nvim-basic-ide/tree/master/lua/user)
