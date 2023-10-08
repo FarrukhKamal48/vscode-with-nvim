@@ -10,6 +10,7 @@ M.servers = {
     "yamlls",
     -- "csharp_ls",
     -- "omnisharp_mono",
+    -- "omnisharp",
 }
 
 return M

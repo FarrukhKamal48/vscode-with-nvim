@@ -25,11 +25,18 @@ local settings = {
 }
 
 function M.config()
-  require("mason").setup(settings)
-  require("mason-lspconfig").setup {
-    ensure_installed = require("utils").servers,
-    automatic_installation = true,
-  }
+    require("mason").setup(settings)
+    require("mason-lspconfig").setup {
+        ensure_installed = require("utils").servers,
+        automatic_installation = true,
+    }
+    -- require("mason-lspconfig").setup_handlers {
+    --     function () -- default handler (optional)
+    --         require("lspconfig").omnisharp.setup{}
+    --     end,
+    -- }
+    -- require("lspconfig").omnisharp_mono.setup{}
 end
+
 
 return M
