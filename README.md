@@ -1,6 +1,4 @@
----
 > DISCLAIMER: I didn't make this config. These are just my tweaks on [Launch.nvim](https://github.com/LunarVim/Launch.nvim).
-/
 
 ## Install Neovim 0.9
 
