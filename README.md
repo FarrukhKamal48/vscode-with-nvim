@@ -145,6 +145,28 @@ yay -S dotnet-host dotnet-runtime dotnet-sdk dotnet-targeting-pack
 - Now, still in unity, select `Assets/Open C# Project`.
 - Open a `C#` file and intelisense should be working :).
 
+If that doesn't work then try this for neovim (using omnisharp-vim I believe):
+
+    How to mono: 
+        mono
+        mono-addins
+        mono-msbuild
+        mono-msbuild-sdkresolver
+        mono-tools
+        dotnet-sdk
+        gtk-sharp-2
+        dotnet-runtime
+
+
+    How to OmniSharp:
+        Directory.Build.props:
+
+        <Project>
+            <PropertyGroup>
+                <FrameworkPathOverride>/lib/mono/4.7.1-api</FrameworkPathOverride>
+            </PropertyGroup>
+        </Project>
+
 ### Plugins
 
 ### You can install new plugins here: [plugins](https://github.com/LunarVim/nvim-basic-ide/tree/master/lua/user)
