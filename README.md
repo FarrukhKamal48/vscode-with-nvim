@@ -1,6 +1,6 @@
 ---
 > DISCLAIMER: I didn't make this config. These are just my tweaks on [Launch.nvim](https://github.com/LunarVim/Launch.nvim).
----
+/
 
 ## Install Neovim 0.9
 
@@ -216,4 +216,3 @@ Heres the wiki for installing new plugins refer to this: [wiki](https://github.c
 - [which-key.nvim](https://github.com/folke/which-key.nvim)
 
 
-\- Edsger W. Dijkstra
