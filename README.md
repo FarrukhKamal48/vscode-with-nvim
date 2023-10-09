@@ -1,3 +1,7 @@
+---
+> DISCLAIMER: I didn't make this config. These are just my tweaks on [Launch.nvim](https://github.com/LunarVim/Launch.nvim).
+---
+
 ## Install Neovim 0.9
 
 You can install Neovim with your package manager e.g. brew, apt, pacman etc.. but remember that when you update your packages Neovim may be upgraded to a newer version.
@@ -211,8 +215,5 @@ Heres the wiki for installing new plugins refer to this: [wiki](https://github.c
 - [vim-illuminate](https://github.com/RRethy/vim-illuminate)
 - [which-key.nvim](https://github.com/folke/which-key.nvim)
 
----
-
-> The computing scientist's main challenge is not to get confused by the complexities of his own making.
 
 \- Edsger W. Dijkstra
