@@ -19,7 +19,7 @@ function M.config()
         filetype = {
             -- java = "cd $dir && javac $fileName && java $fileNameWithoutExt",
             python = "clear && python3.11 -u",
-            c = "gcc $file -o $fileNameWithoutExt && clear && $dir/./$fileNameWithoutExt",
+            c = "cd $dir && gcc $fileName -o $fileNameWithoutExt -lm && $dir/$fileNameWithoutExt",
             -- typescript = "deno run",
             -- rust = "cd $dir && rustc $fileName && $dir/$fileNameWithoutExt"
         },
