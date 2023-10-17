@@ -1,5 +1,4 @@
-local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
-if not vim.loop.fs_stat(lazypath) then
+local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim" if not vim.loop.fs_stat(lazypath) then
   vim.fn.system {
     "git",
     "clone",
@@ -15,9 +14,9 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " " -- make sure to set `mapleader` before lazy so your mappings are correct
 
 -- only load hop.nvim if vscode is using nvim instace
-if vim.g.vscode then
-    require("lazy").setup("user/hop")
-else
+-- if vim.g.vscode then
+--     require("lazy").setup("code")
+-- else
     -- load lazy
     require("lazy").setup("user", {
         install = { colorscheme = { require("user.colorscheme").name } },
@@ -40,4 +39,4 @@ else
             },
         },
     })
-end
+-- end
