@@ -2,13 +2,13 @@ local M = {}
 
 -- check https://github.com/williamboman/mason-lspconfig.nvim for available LSP's
 M.servers = {
-    "bashls",
+    "bash-language-server",
     "clangd",
-    "lua_ls",
+    "lua-language-server",
     "pyright",
     "taplo",
     "yamlls",
-    "csharp_ls",
+    -- "csharp_ls",
     -- "omnisharp_mono",
     -- "omnisharp",
 }
