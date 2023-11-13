@@ -8,6 +8,7 @@ M.servers = {
     "pyright",
     "taplo",
     "yamlls",
+    -- "prosemd_lsp",
     -- "csharp_ls",
     -- "omnisharp_mono",
     -- "omnisharp",
