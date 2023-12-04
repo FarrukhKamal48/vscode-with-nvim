@@ -119,8 +119,8 @@ keymap("n", "<S-q>", "q", opts)
 
 -- Insert --
 -- Press jk fast to escape
-keymap("i", "jk", "<ESC>", opts)
-keymap("i", "kj", "<ESC>", opts)
+-- keymap("i", "jk", "<ESC>", opts)
+-- keymap("i", "kj", "<ESC>", opts)
 
 
 -- Better navigation in insert mode
@@ -207,7 +207,7 @@ if not vim.g.vscode then
 
 
     -- DAP
-    keymap("n", "<leader>db", "<cmd>lua require'dap'.toggle_breakpoint()<cr>", opts)
+    keymap("n", "<A-d><A-b>", "<cmd>lua require'dap'.toggle_breakpoint()<cr>", opts)
     keymap("n", "<leader>dc", "<cmd>lua require'dap'.continue()<cr>", opts)
     keymap("n", "<leader>di", "<cmd>lua require'dap'.step_into()<cr>", opts)
     keymap("n", "<leader>do", "<cmd>lua require'dap'.step_over()<cr>", opts)
