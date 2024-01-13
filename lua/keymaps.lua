@@ -28,14 +28,17 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 
+-- fix kitty alt shit fukery
+keymap("n", "<Left>", "b", opts)
+keymap("n", "<Up>", "5k", opts)
+keymap("n", "<Down>", "5j", opts)
+keymap("n", "<Right>", "w", opts)
+
 -- Move like sonic
-keymap("n", "<A-j>", "5j", opts)
-keymap("n", "<A-k>", "5k", opts)
-
-
--- Move cursor word by word
-keymap("n", "<A-h>", "b", opts)
-keymap("n", "<A-l>", "w", opts)
+-- keymap("n", "<A-j>", "5j", opts)
+-- keymap("n", "<A-k>", "5k", opts)
+-- keymap("n", "<A-h>", "b", opts)
+-- keymap("n", "<A-l>", "w", opts)
 
 
 -- Change key map for cycling search term
