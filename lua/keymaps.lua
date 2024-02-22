@@ -117,7 +117,7 @@ keymap("n", "~", "'", opts)
 
 -- Find and Replace
 keymap("n", "<A-r><A-r>", ":%s/", opts)
-keymap("v", "<A-r><A-r>", ":%s/", opts)
+keymap("v", "<A-r><A-r>", ":s/", opts)
 
 
 -- Resize with arrows
