@@ -19,12 +19,12 @@ function M.config()
         -- dashboard.button("f", " " .. " Find file", ":Telescope find_files <CR>"),
         -- dashboard.button("e", " " .. " New file", ":ene <BAR> startinsert <CR>"),
         -- dashboard.button("t", " " .. " Find text", ":Telescope live_grep <CR>"),
-        dashboard.button("c", " " .. " Config", ":e ~/.config/nvim/init.lua <CR>"),
-        dashboard.button("r", " " .. " Recent files", ":Telescope oldfiles <CR>"),
-        dashboard.button("p", " " .. " Find project", ":lua require('telescope').extensions.projects.projects()<CR>"),
-        dashboard.button("s", " " .. " Stash", ":e ~/Bus/Stash/links.md<CR>"),
+        dashboard.button("c", " " .. " Nvim Config", ":e ~/.config/nvim/init.lua <CR>"),
+        dashboard.button("e", " " .. " .dotEndeavor", ":e ~/.dotEndeavor/config-stow/ <CR>"),
         dashboard.button("d", " " .. " Dev", ":e ~/Dev/ | NvimTreeClose | NvimTreeOpen<CR>"),
         dashboard.button("a", " " .. " Repos", ":e ~/Repos/ | NvimTreeClose | NvimTreeOpen<CR>"),
+        dashboard.button("r", " " .. " Recent files", ":Telescope oldfiles <CR>"),
+        dashboard.button("p", " " .. " Find project", ":lua require('telescope').extensions.projects.projects()<CR>"),
         dashboard.button("q", " " .. " Quit", ":qa<CR>"),
     }
     local function footer()
