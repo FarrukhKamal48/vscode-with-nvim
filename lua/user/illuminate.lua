@@ -48,6 +48,7 @@ function M.config()
     providers_regex_syntax_denylist = {},
     providers_regex_syntax_allowlist = {},
     under_cursor = true,
+    large_file_cutoff = 10000,
   }
 end
 

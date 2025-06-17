@@ -46,4 +46,4 @@ M = {
   end,
 }
 
-return M
+return {}

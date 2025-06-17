@@ -1,8 +1,12 @@
 local M = {
   "max397574/better-escape.nvim",
+  commit = "19a38aab94961016430905ebec30d272a01e9742",
   event = "VimEnter",
-  -- commit = "1a1eceafe54b5081eae4cb91c723abd1d450f34b",
+  config = function()
+    require("better_escape").setup()
+  end,
 }
+
 
 
 function M.config()
