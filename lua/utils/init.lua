@@ -6,7 +6,6 @@ M.servers = {
     "clangd",
     "lua_ls",
     "pyright",
-    "taplo",
     "yamlls",
     "cmake",
     -- "prosemd_lsp",
