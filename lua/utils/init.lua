@@ -14,4 +14,14 @@ M.servers = {
     -- "omnisharp",
 }
 
+M.parsers = {
+    "python", 
+    "c", 
+    "cpp", 
+    "bash", 
+    "lua", 
+    "toml", 
+    "yaml",
+}
+
 return M
