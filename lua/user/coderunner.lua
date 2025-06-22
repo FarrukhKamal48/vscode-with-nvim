@@ -1,7 +1,7 @@
 local M = {
   "CRAG666/code_runner.nvim",
   event = "VimEnter",
-  commit = "01ce754d162170a3fcf372ad9f188a65c010f235",
+--  commit = "01ce754d162170a3fcf372ad9f188a65c010f235",
 }
 
 
