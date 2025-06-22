@@ -1,6 +1,6 @@
 > DISCLAIMER: I didn't make this config. These are just my tweaks on [Launch.nvim](https://github.com/LunarVim/Launch.nvim).
 
-## Install Neovim 0.10
+## Install Neovim 0.11
 
 You can install Neovim with your package manager e.g. brew, apt, pacman etc.. but remember that when you update your packages Neovim may be upgraded to a newer version.
 
@@ -11,7 +11,7 @@ If you would like to make sure Neovim only updates when you want it to than I re
 ```sh
 git clone https://github.com/neovim/neovim.git
 cd neovim
-git checkout release-0.10
+git checkout release-0.11
 make CMAKE_BUILD_TYPE=Release
 sudo make install
 ```
