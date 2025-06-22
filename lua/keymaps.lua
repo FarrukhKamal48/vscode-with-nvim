@@ -48,17 +48,17 @@ keymap('i', "<A-;>", ";", opts)
 
 
 -- [kitty] move like sonic
-keymap("n", "<Left>", "b", opts)
-keymap("v", "<Left>", "b", opts)
+keymap("n", "<A-h>", "b", opts)
+keymap("v", "<A-h>", "b", opts)
 
-keymap("n", "<Down>", "5j", opts)
-keymap("v", "<Down>", "5j", opts)
+keymap("n", "<A-j>", "5j", opts)
+keymap("v", "<A-j>", "5j", opts)
 
-keymap("n", "<Up>", "5k", opts)
-keymap("v", "<Up>", "5k", opts)
+keymap("n", "<A-k>", "5k", opts)
+keymap("v", "<A-k>", "5k", opts)
 
-keymap("n", "<Right>", "w", opts)
-keymap("v", "<Right>", "w", opts)
+keymap("n", "<A-l>", "w", opts)
+keymap("v", "<A-l>", "w", opts)
 
 -- [alacritty] move like sonic
 -- keymap("n", "<A-h>", "b", opts)
