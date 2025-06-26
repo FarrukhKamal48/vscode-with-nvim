@@ -1,7 +1,7 @@
 local M = {
-  "phaazon/hop.nvim",
-  event = "VimEnter",
---  commit = "1a1eceafe54b5081eae4cb91c723abd1d450f34b",
+    "phaazon/hop.nvim",
+    event = "VimEnter",
+    commit = "1a1eceafe54b5081eae4cb91c723abd1d450f34b",
 }
 
 

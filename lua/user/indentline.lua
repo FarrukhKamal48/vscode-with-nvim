@@ -1,10 +1,12 @@
 local M = {
     "lukas-reineke/indent-blankline.nvim",
+    commit = "005b56001b2cb30bfa61b7986bc50657816ba4ba",
     event = "VimEnter",
     main = "ibl",
     dependencies = {
         {
             "HiPhish/rainbow-delimiters.nvim",
+            commit = "55ad4fb76ab68460f700599b7449385f0c4e858e",
             event = "VimEnter",
         },
     }

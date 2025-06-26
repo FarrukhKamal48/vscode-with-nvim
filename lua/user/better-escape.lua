@@ -1,6 +1,7 @@
 local M = {
     "max397574/better-escape.nvim",
     event = "VimEnter",
+    commit = "19a38aab94961016430905ebec30d272a01e9742"
 }
 
 
