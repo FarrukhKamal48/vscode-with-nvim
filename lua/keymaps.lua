@@ -19,6 +19,8 @@ vim.g.mapleader = " "
 --   term_mode = "t",
 --   command_mode = "c",
 
+-- Better Escape
+keymap("i", "<C-l>", "<Esc>", opts)
 
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
