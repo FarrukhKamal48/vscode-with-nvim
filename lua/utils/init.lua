@@ -8,6 +8,7 @@ M.servers = {
     "pyright",
     "yamlls",
     "cmake",
+    "vtsls"
     -- "prosemd_lsp",
     -- "csharp_ls",
     -- "omnisharp_mono",
@@ -15,12 +16,12 @@ M.servers = {
 }
 
 M.parsers = {
-    "python", 
-    "c", 
-    "cpp", 
-    "bash", 
-    "lua", 
-    "toml", 
+    "python",
+    "c",
+    "cpp",
+    "bash",
+    "lua",
+    "toml",
     "yaml",
 }
 
