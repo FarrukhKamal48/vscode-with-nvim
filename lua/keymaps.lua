@@ -191,6 +191,7 @@ if not vim.g.vscode then
     keymap("n", "<leader>go", ":DiffviewOpen<CR>", opts)
     keymap("n", "<leader>gq", ":DiffviewClose<CR>", opts)
     keymap("n", "<leader>gh", ":DiffviewFileHistory<CR>", opts)
+    keymap("n", "<leader>gr", ":DiffviewRefresh<CR>", opts)
 
     -- DAP
     keymap("n", "<A-d><A-b>", "<cmd>lua require'dap'.toggle_breakpoint()<cr>", opts)
