@@ -1,14 +1,14 @@
 local M = {
     "ahmedkhalf/project.nvim",
     commit = "8c6bad7d22eef1b71144b401c9f74ed01526a4fb",
-    dependencies = {
+
+    keys = {
         {
-            "nvim-telescope/telescope.nvim",
-            commit = "b4da76be54691e854d3e0e02c36b0245f945c2c7",
-            event = "Bufenter",
-            cmd = { "Telescope" },
+            "<leader>fp",
+            "<cmd>FzfProjects<CR>",
+            desc = "Find Recent Projects",
         },
-    },
+    }
 }
 
 function M.config()
@@ -21,8 +21,26 @@ function M.config()
         patterns = { ".git", "Makefile", "package.json", "CMakeLists.txt" },
     }
 
-    local telescope = require "telescope"
-    telescope.load_extension "projects"
+    local history = require("project_nvim.utils.history")
+    local project_p = require("project_nvim.project")
+
+    vim.api.nvim_create_user_command("FzfProjects", function()
+        local projects = history.get_recent_projects()
+
+        require("fzf-lua").fzf_exec(projects, {
+            prompt = "Projects> ",
+            actions = {
+                ["default"] = function(selected)
+                    if selected and #selected > 0 then
+                        local project_path = selected[1]
+                        if project_p.set_pwd(project_path, "fzf-lua") then
+                            require("fzf-lua").files()
+                        end
+                    end
+                end,
+            },
+        })
+    end, {})
 end
 
 return M
