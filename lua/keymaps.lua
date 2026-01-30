@@ -118,8 +118,8 @@ keymap("n", "~", "'", opts)
 
 
 -- Find and Replace
-keymap("n", "<A-s>", ":%s/", opts)
-keymap("v", "<A-s>", ":s/", opts)
+keymap("n", "<A-rr>", ":%s/", opts)
+keymap("v", "<A-r>", ":s/", opts)
 
 
 -- Resize with arrows
@@ -185,8 +185,12 @@ if not vim.g.vscode then
     keymap("n", "<leader>fb", ":Telescope buffers<CR>", opts)
 
     -- Git
-    keymap("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts)
+    -- keymap("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts)
 
+    -- Diff View
+    keymap("n", "<leader>go", ":DiffviewOpen<CR>", opts)
+    keymap("n", "<leader>gq", ":DiffviewClose<CR>", opts)
+    keymap("n", "<leader>gh", ":DiffviewFileHistory<CR>", opts)
 
     -- DAP
     keymap("n", "<A-d><A-b>", "<cmd>lua require'dap'.toggle_breakpoint()<cr>", opts)
