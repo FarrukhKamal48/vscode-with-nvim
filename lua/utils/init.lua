@@ -8,7 +8,8 @@ M.servers = {
     "pyright",
     "yamlls",
     "cmake",
-    "vtsls"
+    "vtsls", -- typescript
+    "rust_analyzer"
     -- "prosemd_lsp",
     -- "csharp_ls",
     -- "omnisharp_mono",
