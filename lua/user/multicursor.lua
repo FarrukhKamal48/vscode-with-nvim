@@ -1,4 +1,4 @@
-return {
+local M = {
     "jake-stewart/multicursor.nvim",
     branch = "1.0",
     commit = "7fa95668af59d2a01c87390fb2eed8e48600952c",
@@ -7,43 +7,43 @@ return {
         local mc = require("multicursor-nvim")
         mc.setup()
 
-        local set = vim.keymap.set
+        local keymap = vim.keymap.set
 
         -- Add or skip cursor above/below the main cursor.
-        set({ "n", "x" }, "<up>", function()
+        keymap({ "n", "x" }, "<A-C-k>", function()
             mc.lineAddCursor(-1)
         end)
-        set({ "n", "x" }, "<down>", function()
+        keymap({ "n", "x" }, "<A-C-j>", function()
             mc.lineAddCursor(1)
         end)
-        set({ "n", "x" }, "<leader><up>", function()
+        keymap({ "n", "x" }, "<A-s>", function()
             mc.lineSkipCursor(-1)
         end)
-        set({ "n", "x" }, "<leader><down>", function()
+        keymap({ "n", "x" }, "<A-S>", function()
             mc.lineSkipCursor(1)
         end)
 
         -- Add or skip adding a new cursor by matching word/selection
-        set({ "n", "x" }, "<A-n>", function()
+        keymap({ "n", "x" }, "<A-n>", function()
             mc.matchAddCursor(1)
         end)
-        set({ "n", "x" }, "<A-s>", function()
+        keymap({ "n", "x" }, "<A-s>", function()
             mc.matchSkipCursor(1)
         end)
-        set({ "n", "x" }, "<A-N>", function()
+        keymap({ "n", "x" }, "<A-N>", function()
             mc.matchAddCursor(-1)
         end)
-        set({ "n", "x" }, "<A-S>", function()
+        keymap({ "n", "x" }, "<A-S>", function()
             mc.matchSkipCursor(-1)
         end)
 
         -- Add and remove cursors with control + left click.
-        set("n", "<c-leftmouse>", mc.handleMouse)
-        set("n", "<c-leftdrag>", mc.handleMouseDrag)
-        set("n", "<c-leftrelease>", mc.handleMouseRelease)
+        keymap("n", "<c-leftmouse>", mc.handleMouse)
+        keymap("n", "<c-leftdrag>", mc.handleMouseDrag)
+        keymap("n", "<c-leftrelease>", mc.handleMouseRelease)
 
         -- Disable and enable cursors.
-        set({ "n", "x" }, "<A-q>", mc.toggleCursor)
+        keymap({ "n", "x" }, "<Esc>", mc.toggleCursor)
 
         -- Mappings defined in a keymap layer only apply when there are
         -- multiple cursors. This lets you have overlapping mappings.
@@ -75,4 +75,6 @@ return {
         hl(0, "MultiCursorDisabledVisual", { link = "Visual" })
         hl(0, "MultiCursorDisabledSign", { link = "SignColumn" })
     end,
-} 
+}
+
+return {}

@@ -79,7 +79,8 @@ local function on_attach(bufnr)
 end
 
 function M.config()
-    -- local tree_cb = require("nvim-tree.config").nvim_tree_callback
+    vim.keymap.set("n", "<leader>E", ":NvimTreeToggle<CR> :NvimTreeRefresh<CR>", {desc = "toggle file tree", silent = false})
+
     require("nvim-tree").setup {
         on_attach = on_attach,
         update_focused_file = {

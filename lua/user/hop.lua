@@ -16,6 +16,13 @@ function M.config()
         multi_windows = true,
     }
 
+    local keymap = vim.keymap.set
+
+    keymap("n", "F", ":HopLineStartMW<CR>", {desc = "hop to line", silent = false})
+    keymap("n", "fw", ":HopWordMW<CR>", {desc = "hop to word", silent = false})
+    keymap("n", "fp", ":HopPatternMW<CR>", {desc = "hop to pattern", silent = false})
+    keymap("n", "fc", ":HopChar2MW<CR>", {desc = "hop to char", silent = false})
+
 end
 
 return M
