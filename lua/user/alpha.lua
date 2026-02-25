@@ -21,6 +21,7 @@ function M.config()
         -- dashboard.button("t", " " .. " Find text", ":Telescope live_grep <CR>"),
         dashboard.button("c", " " .. " Nvim Config", ":e ~/.config/nvim/init.lua <CR>"),
         dashboard.button("e", " " .. " .dotEndeavor", ":e ~/.dotEndeavor/config-stow/ <CR>"),
+        dashboard.button("n", " " .. " Note", ":e ~/vault/notes/ <CR>"),
         dashboard.button("d", " " .. " Dev", ":e ~/Dev/ | NvimTreeClose | NvimTreeOpen<CR>"),
         dashboard.button("a", " " .. " Repos", ":e ~/Repos/ | NvimTreeClose | NvimTreeOpen<CR>"),
         dashboard.button("r", " " .. " Recent files", ":Telescope oldfiles <CR>"),
