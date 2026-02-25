@@ -1,0 +1,103 @@
+local M = {
+    "hedyhli/outline.nvim",
+    commit = "02deddf217d0fe32cef12e941dd28951abe1b05a",
+    event = "VimEnter",
+    opts = {
+        symbols = {
+            filter = {},
+            icons = {},
+            icon_fetcher = nil,
+        },
+        symbol_folding = {
+            autofold_depth = 1,
+            auto_unfold = {
+                hovered = true,
+                only = false,
+            },
+        },
+        outline_items = {
+            show_symbol_lineno = true,
+            show_symbol_details = true,
+            highlight_hovered_item = true,
+        },
+        outline_window = {
+            position = "right",
+            split_command = "botright vsplit",
+            width = 35,
+            auto_jump = false,
+            auto_close = false,
+            show_cursorline = true,
+            hide_cursor = true,
+            show_numbers = false,
+            show_relative_numbers = false,
+            wrap = false,
+            focus_on_open = true,
+            winhl = "",
+            jump_highlight_duration = 400,
+        },
+        preview_window = {
+            auto_preview = false,
+            live = true,
+            border = "single",
+            winhl = "NormalFloat:",
+            max_height = 15,
+            min_height = 5,
+            max_width = 80,
+            min_width = 40,
+            open_hover_on_preview = false,
+            fix_focus = false,
+        },
+        guides = {
+            enabled = true,
+            markers = {
+                bottom = "└",
+                middle = "├",
+                top = "│",
+                vertical = "│",
+            },
+        },
+        keymaps = {
+            show_help = "?",
+            close = { "<Esc>", "q" },
+            goto_location = "<Cr>",
+            peek_location = "o",
+            goto_and_close = "<S-Cr>",
+            restore_location = "<C-g>",
+            hover_symbol = "<C-space>",
+            toggle_preview = "K",
+            rename_symbol = "r",
+            code_actions = "a",
+            fold = "h",
+            fold_toggle = "<Tab>",
+            fold_toggle_all = "<S-Tab>",
+            unfold = "l",
+            fold_all = "W",
+            unfold_all = "E",
+            reset_fold = "R",
+            down_and_jump = "<C-j>",
+            up_and_jump = "<C-k>",
+            down_and_skip = "<C-d>",
+            up_and_skip = "<C-u>",
+        },
+        providers = {
+            lsp = {
+                priority = 10,
+                enabled = true,
+                name = "LSP",
+            },
+            markdown = {
+                enabled = true,
+                name = "Markdown",
+            },
+            norg = {
+                enabled = true,
+                name = "Norg",
+            },
+        },
+    },
+    keys = {
+        { "<leader>o", "<cmd>Outline<CR>", desc = "Toggle Outline" },
+    },
+}
+
+return M
