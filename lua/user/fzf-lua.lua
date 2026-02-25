@@ -1,5 +1,6 @@
 local M = {
     "ibhagwan/fzf-lua",
+    commit = "b3c870638bad2929aa62c4003cd9935110ada467",
     cmd = "FzfLua",
     event = "VeryLazy",
 
