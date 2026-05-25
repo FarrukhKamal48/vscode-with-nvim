@@ -18,6 +18,10 @@ vim.g.mapleader = " "
 -- Better Escape
 keymap("i", "<C-l>", "<Esc>", {desc = "alternate escape", silent = true})
 
+-- Screen line movement
+keymap({ "n", "v", "x" }, "j", "gj", {desc = "move 1 screen line down", silent = true})
+keymap({ "n", "v", "x" }, "k", "gk", {desc = "move 1 screen line down", silent = true})
+
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", {desc = "navigate left window", silent = false})
 keymap("n", "<C-j>", "<C-w>j", {desc = "navigate down window", silent = false})
@@ -27,8 +31,8 @@ keymap("n", "<C-l>", "<C-w>l", {desc = "navigate right window", silent = false})
 
 -- Better navigation in insert, command and terminal mode
 keymap({ "i", "c", "t" }, "<A-h>", "<Left>", {desc = "move left", silent = false})
-keymap({ "i", "c", "t" }, "<A-j>", "<Down>", {desc = "move down", silent = false})
-keymap({ "i", "c", "t" }, "<A-k>", "<Up>", {desc = "move up", silent = false})
+keymap({ "i", "c", "t" }, "<A-j>", "g<Down>", {desc = "move 1 screen line down", silent = false})
+keymap({ "i", "c", "t" }, "<A-k>", "g<Up>", {desc = "move 1 screen line up", silent = false})
 keymap({ "i", "c", "t" }, "<A-l>", "<Right>", {desc = "move right", silent = false})
 
 
