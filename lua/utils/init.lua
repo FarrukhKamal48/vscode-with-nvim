@@ -9,7 +9,7 @@ M.servers = {
     "yamlls",
     "cmake",
     "vtsls", -- typescript
-    "rust_analyzer"
+    "rust_analyzer",
     -- "prosemd_lsp",
     -- "csharp_ls",
     -- "omnisharp_mono",
